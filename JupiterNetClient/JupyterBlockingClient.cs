@@ -5,6 +5,8 @@ namespace JupiterNetClient
 {
     public class JupyterBlockingClient : JupyterClientBase
     {
+        public JupyterBlockingClient(string pythonFolder = "") : base(pythonFolder) { }
+
         public JupyterMessage Execute(string code)
         {
             FlushMessages();

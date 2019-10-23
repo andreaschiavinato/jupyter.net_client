@@ -16,9 +16,23 @@ namespace JupiterNetClient
         private string _pythonFolder;        
         private KernelSpec _kernelSpec;        
 
-        public void Initialize()
+        public void Initialize(string pythonFolder = "")
         {
-            _pythonFolder = FindPythonFolder();
+            if (string.IsNullOrEmpty(pythonFolder))
+            {
+                _pythonFolder = FindPythonFolder();
+
+                if (string.IsNullOrEmpty(_pythonFolder))
+                    throw new Exception("Cannot find python.exe");
+            }
+            else
+            {
+                _pythonFolder = pythonFolder;
+                string pathvar = Environment.GetEnvironmentVariable("PATH");
+                var value = pathvar + @";" + pythonFolder;
+                Environment.SetEnvironmentVariable("PATH", value, EnvironmentVariableTarget.Process);
+            }
+
             KernelSpecs = GetKernels(_pythonFolder);
         }
 
@@ -96,6 +110,11 @@ namespace JupiterNetClient
                     CreateNoWindow = true
                 }
             };
+            
+            if (!File.Exists(process.StartInfo.FileName))
+            {
+                throw new Exception("Cannot find jupyter-kernelspec.exe.");
+            }
 
             process.Start();
 
@@ -115,7 +134,7 @@ namespace JupiterNetClient
                 Thread.Sleep(250);
             }
             Thread.Sleep(500);
-            Console.WriteLine($"Connection file ({file}) found: {File.Exists(file)}");
+            //Console.WriteLine($"Connection file ({file}) found: {File.Exists(file)}");
         }
 
         [DllImport("kernel32.dll", SetLastError = true)]

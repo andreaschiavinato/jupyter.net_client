@@ -10,8 +10,7 @@ namespace JupiterNetClient
     {
         private CancellationTokenSource _monitorChannnelsCts;
         
-
-        public JupyterClient() : base()
+        public JupyterClient(string pythonFolder = "") : base(pythonFolder)
         {
             OnConnected += (sender, args) => {
                 _monitorChannnelsCts = new CancellationTokenSource();

@@ -41,11 +41,11 @@ namespace JupiterNetClient
         private KernelManager _kernelManager;
         #endregion
 
-        public JupyterClientBase()
+        public JupyterClientBase(string pythonFolder = "")
         {
             _session = new Session();
             _kernelManager = new KernelManager();
-            _kernelManager.Initialize();
+            _kernelManager.Initialize(pythonFolder);
         }
 
         public Dictionary<string, KernelSpec> GetKernels() =>
