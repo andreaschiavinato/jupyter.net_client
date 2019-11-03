@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Le informazioni generali relative a un assembly sono controllate dal seguente 
 // set di attributi. Modificare i valori di questi attributi per modificare le informazioni
 // associate a un assembly.
-[assembly: AssemblyTitle("JupyterNetSampleConsole")]
+[assembly: AssemblyTitle("ExecutingScript")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("JupyterNetSampleConsole")]
+[assembly: AssemblyProduct("ExecutingScript")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Se il progetto viene esposto a COM, il GUID seguente verrà utilizzato come ID della libreria dei tipi
-[assembly: Guid("e6339f08-42e3-41e9-8998-59bbce18d6eb")]
+[assembly: Guid("2f01210e-047b-46b7-8de3-6e89ba0c564c")]
 
 // Le informazioni sulla versione di un assembly sono costituite dai seguenti quattro valori:
 //
