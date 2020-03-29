@@ -3,7 +3,7 @@ using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 
-namespace JupiterNetClient
+namespace JupyterNetClient
 {
     // see https://jupyter-client.readthedocs.io/en/stable/messaging.html#general-message-format
     public struct JupyterMessage

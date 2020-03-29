@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 
-namespace JupiterNetClient
+namespace JupyterNetClient
 {
     public class KernelManager
     {
@@ -34,6 +34,11 @@ namespace JupiterNetClient
             }
 
             KernelSpecs = GetKernels(_pythonFolder);
+
+            if (KernelSpecs == null)
+            {
+                throw new Exception("No kernels found");
+            }
         }
 
         public string StartKernel(string sessionId, string kernelName)

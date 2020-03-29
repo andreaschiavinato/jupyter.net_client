@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Text;
 
-namespace JupiterNetClient.Nbformat
+namespace JupyterNetClient.Nbformat
 {
     public class NbTextConverter : JsonConverter
     {

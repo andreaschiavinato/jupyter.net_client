@@ -1,4 +1,4 @@
-﻿using JupiterNetClient.Nbformat;
+﻿using JupyterNetClient.Nbformat;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading;
 using ZeroMQ;
 
-namespace JupiterNetClient
+namespace JupyterNetClient
 {
     public abstract class JupyterClientBase
     {

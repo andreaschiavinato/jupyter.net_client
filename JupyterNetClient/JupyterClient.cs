@@ -1,10 +1,10 @@
-﻿using JupiterNetClient.Nbformat;
+﻿using JupyterNetClient.Nbformat;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using ZeroMQ;
 
-namespace JupiterNetClient
+namespace JupyterNetClient
 {
     public class JupyterClient : JupyterClientBase
     {

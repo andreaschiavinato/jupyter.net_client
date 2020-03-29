@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
-namespace JupiterNetClient.Nbformat
+namespace JupyterNetClient.Nbformat
 {
     public static class MimeTypes
     {

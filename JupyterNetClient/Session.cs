@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using ZeroMQ;
 
-namespace JupiterNetClient
+namespace JupyterNetClient
 {
     public class Session
     {

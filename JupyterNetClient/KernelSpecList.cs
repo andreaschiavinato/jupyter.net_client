@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace JupiterNetClient
+namespace JupyterNetClient
 {
     public class KernelSpecList
     {

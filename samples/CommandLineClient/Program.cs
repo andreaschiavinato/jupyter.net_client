@@ -1,5 +1,5 @@
-﻿using JupiterNetClient;
-using JupiterNetClient.Nbformat;
+﻿using JupyterNetClient;
+using JupyterNetClient.Nbformat;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -177,6 +177,3 @@ class Program
         }
     }
 }
-
-
-

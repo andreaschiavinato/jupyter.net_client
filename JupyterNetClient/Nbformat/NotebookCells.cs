@@ -3,7 +3,7 @@ using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 
-namespace JupiterNetClient.Nbformat
+namespace JupyterNetClient.Nbformat
 {
     [JsonConverter(typeof(StringEnumConverter))]
     public enum CellType

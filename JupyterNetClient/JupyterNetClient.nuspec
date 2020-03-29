@@ -9,9 +9,8 @@
     <licenseUrl>https://github.com/andreaschiavinato/jupyter.net_client/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/andreaschiavinato/jupyter.net_client/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Jupyter client for the .NET framework</description>
-    <releaseNotes>Preliminary release.</releaseNotes>
-    <copyright>Copyright 2019</copyright>
+    <description>Jupyter client for the .NET framework</description>    
+    <copyright>Copyright 20</copyright>
     <tags>Jupyter IPython Notebook</tags>
   </metadata>
 </package>

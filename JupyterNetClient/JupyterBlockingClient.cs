@@ -1,7 +1,7 @@
 ﻿using System;
 using ZeroMQ;
 
-namespace JupiterNetClient
+namespace JupyterNetClient
 {
     public class JupyterBlockingClient : JupyterClientBase
     {

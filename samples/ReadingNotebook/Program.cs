@@ -1,4 +1,4 @@
-﻿using JupiterNetClient.Nbformat;
+﻿using JupyterNetClient.Nbformat;
 using System;
 
 class Program

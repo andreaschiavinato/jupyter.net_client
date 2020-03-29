@@ -2,7 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 
-namespace JupiterNetClient.Nbformat
+namespace JupyterNetClient.Nbformat
 {
     public class CellOutputConverter : JsonConverter
     {

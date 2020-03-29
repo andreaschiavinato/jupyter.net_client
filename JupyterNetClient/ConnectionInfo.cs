@@ -1,4 +1,4 @@
-﻿namespace JupiterNetClient
+﻿namespace JupyterNetClient
 {
     public class ConnectionInfo
     {
